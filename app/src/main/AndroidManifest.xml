@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.application.ecogreen">
+    <!-- SNS 로그인 자체가 인터넷 사용이므로 인터넷 권한 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 위험권한(사용자에게 권한을 받아와야 함) -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcoGreen">
+        <activity android:name=".AccountingSettingActivity"></activity>
+        <activity android:name=".MainHomeActivity"></activity>
+        <activity android:name=".DisuseWasteActivity"></activity>
+        <activity android:name=".ReuseWasteActivity"></activity>
+        <activity android:name=".DirectFillUpWaste"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="my.application.ecogreen.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

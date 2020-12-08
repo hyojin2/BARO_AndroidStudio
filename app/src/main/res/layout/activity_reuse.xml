@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        android:gravity="center"
+        android:text="@string/reuse_waste"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_height"
+
+        android:background="@color/boarder_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="@dimen/content_padding"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/boarder_color"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/reuse_image"
+                android:layout_width="395dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/reuse" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/choose_background"
+                android:gravity="center"
+                android:text="@string/reuse_waste"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/choose_background"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="서대문구"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/dialog_background"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:text="http://www.s8272.co.kr/"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="177dp"
+                android:layout_height="114dp"
+                android:layout_gravity="center"
+                android:paddingTop="30dp"
+                android:rotationY="181"
+                android:src="@drawable/back_arrow" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
