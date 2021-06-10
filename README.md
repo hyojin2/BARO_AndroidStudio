@@ -1,5 +1,4 @@
 # BARO_AndroidStudio
-# Android-Studio
 ECOGREEN Android Studio Repository
 캡스톤디자인 프로젝트 에코그린 팀, 대형폐기물 배출 안내 어플리케이션의 Android Studio 파트 레포지토리이다.
 
