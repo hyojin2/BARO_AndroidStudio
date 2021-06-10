@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "162939952789-mv51ace5n7a01fdfmhte3kgr5kl6rruv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.application.ecogreen",
+            "certificate_hash": "0e39c7993ba047010b2cd1a530bf8303bb4f6dc8"
+          }
+        },
+        {
           "client_id": "162939952789-5voml23i7vau148lksuq3p42kfgd3ek4.apps.googleusercontent.com",
           "client_type": 3
         }

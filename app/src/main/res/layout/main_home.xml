@@ -3,24 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/normal_height"
-        android:gravity="center"
-        android:text="@string/main_title"
-        android:textColor="@color/text_color"
-        android:textSize="@dimen/title_size"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding">
+
+        <Spinner
+            android:id="@+id/change_addr"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/content_padding"
+            android:layout_marginBottom="@dimen/content_padding"
+            android:layout_weight="5"
+            android:background="@drawable/spinner"
+            android:entries="@array/seoul_region" />
+
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/border_height"
-        android:layout_marginBottom="@dimen/content_padding"
-        android:background="@color/boarder_color" />
+        android:layout_marginBottom="@dimen/border_height"
+        android:background="@color/baro_button" />
 
     <include
         layout="@layout/select_service_dialog"
@@ -28,16 +38,13 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/account_setting"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/normal_height"
-        android:gravity="end"
-        android:paddingRight="@dimen/text_size"
-        android:text="@string/about_account"
-        android:textColor="@color/text_color"
-        android:textSize="@dimen/title_size"
-        android:textStyle="normal" />
-
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/content_padding"
+        android:layout_marginBottom="@dimen/content_padding"
+        android:background="@drawable/settings"/>
 
 </LinearLayout>
