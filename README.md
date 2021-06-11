@@ -23,7 +23,7 @@ https://github.com/dayoung100/ECOGREEN
 ## 프로젝트 레포지토리 정리
 https://github.com/syoung622/Deep-Learning : 딥러닝 구현  
 https://github.com/hyojin2/Android-Studio : android studio 구현  
-https://github.com/dayoung100/Virtual_Ruler : Virtual Ruler 구현<br/><br/>
+https://github.com/dayoung100/ECOGREEN/tree/main/AR_virtual%20ruler : Virtual Ruler 구현<br/><br/>
  
 ## Technology TODO   
 ### [Android Studio]
